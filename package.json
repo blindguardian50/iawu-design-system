@@ -1,0 +1,81 @@
+{
+  "name": "@blindguardian50/funda-comps",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/blindguardian50"
+  },
+  "version": "1.0.1",
+  "description": "This project provides Fundamental Components to use in React Applications.",
+  "scripts": {
+    "rollup": "rollup -c --bundleConfigAsCjs",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "happy_heay_dude/blindguardian50",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "8.3.3",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-webpack5": "^6.5.13",
+    "@storybook/manager-webpack5": "^6.5.13",
+    "@storybook/react": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
+    "@testing-library/react": "^13.4.0",
+    "@types/jest": "^29.2.2",
+    "@types/react": "^18.0.25",
+    "babel-jest": "^29.2.2",
+    "babel-loader": "^8.3.0",
+    "css-loader": "^6.7.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.2.2",
+    "jest-environment-jsdom": "^29.2.2",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "postcss": "^8.4.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^2.60.0",
+    "rollup-plugin-dts": "^3.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "storybook-preset-less": "^1.1.3",
+    "style-loader": "^3.3.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {}
+}
