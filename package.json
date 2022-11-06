@@ -1,10 +1,10 @@
 {
-  "name": "@blindguardian50/funda-comps",
+  "name": "@blindguardian50/iawu-design-system",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/blindguardian50"
   },
-  "version": "1.0.1",
-  "description": "This project provides Fundamental Components to use in React Applications.",
+  "version": "1.0.0",
+  "description": "Design System for Educational Purposes.",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs",
     "test": "jest",

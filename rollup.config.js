@@ -36,6 +36,6 @@ export default [
         output: [{ file: "dist/index.d.ts", format: "esm" }],
         plugins: [dts()],
 
-        external: [/\.css$/],
+        external: [/(\.css|\.less)$/],
     },
 ];
