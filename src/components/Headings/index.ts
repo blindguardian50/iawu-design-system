@@ -1,0 +1,1 @@
+export {BaseHeading} from "./Headings"

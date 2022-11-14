@@ -34,3 +34,29 @@ BaseButtonBrandLight3.args = {
     backgroundCSSVar: "--brand-light3-color",
     colorCSSVar: "--dark-color",
 }
+
+//Typography
+
+export const BaseButtonFont1 = Template.bind({});
+BaseButtonFont1.args = {
+    children: "Base Text",
+    fontCSSVar: "--font1"
+}
+
+export const BaseButtonFont2 = Template.bind({});
+BaseButtonFont2.args = {
+    children: "Base Text",
+    fontCSSVar: "--font2"
+}
+
+export const BaseButtonFont3 = Template.bind({});
+BaseButtonFont3.args = {
+    children: "Base Text",
+    fontCSSVar: "--font3"
+}
+
+export const BaseButtonFont4 = Template.bind({});
+BaseButtonFont4.args = {
+    children: "Base Text",
+    fontCSSVar: "--font4"
+}

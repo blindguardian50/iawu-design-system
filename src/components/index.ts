@@ -1,1 +1,2 @@
-export *  from "./Progress";
+export *  from "./Buttons";
+export *  from "./Headings";

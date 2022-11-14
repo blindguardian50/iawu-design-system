@@ -11,11 +11,13 @@ const TemplateButton = styled.button`
 type BaseButtonProps = {
     colorCSSVar?: string,
     backgroundCSSVar?: string,
+    fontCSSVar?: string
 }
 const BaseButton = styled(TemplateButton)<BaseButtonProps>`
   color: var(${props => props.colorCSSVar ?? "--light-color"});
   background: var(${props => props.backgroundCSSVar ?? "--brand-color"});
   transition: filter 0.5s, transform 0.1s;
+  font: var(${props => props.fontCSSVar ?? "--font1"});
   :hover {
     filter: brightness(120%);
   }

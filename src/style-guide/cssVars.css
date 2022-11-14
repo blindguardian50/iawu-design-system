@@ -1,8 +1,31 @@
 :root {
     --light-color: #ffffff;
     --dark-color: #000000;
+
     --brand-color: #1D2538;
     --brand-light1-color: #475B74;
     --brand-light2-color: #7C8DA5;
     --brand-light3-color: #E0E1DC;
+
+    /* typography*/
+    --font-family1: Garamond, serif;
+    --font-size1: 2rem;
+    --font-weight1: bold;
+    --font1: var(--font-weight1) var(--font-size1) var(--font-family1);
+
+    --font-family2: "Courier New", monospace;
+    --font-size2: 1.5rem;
+    --font-weight2: normal;
+    --font2: var(--font-weight2) var(--font-size2) var(--font-family2);
+
+    --font-family3: "Times New Roman", serif;
+    --font-size3: 1rem;
+    --font-weight3: normal;
+    --font3: var(--font-weight3) var(--font-size3) var(--font-family3);
+
+    --font-family4: Arial, sans-serif;
+    --font-size4: 0.75rem;
+    --font-weight4: normal;
+    --font4: var(--font-weight4) var(--font-size4) var(--font-family4) ;
+    /*--*/
 }
