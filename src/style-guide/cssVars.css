@@ -7,6 +7,14 @@
     --brand-light2-color: #7C8DA5;
     --brand-light3-color: #E0E1DC;
 
+    --ex1: rgba(71, 91, 116, 0.4);
+    --ex2: rgba(124, 141, 165, 0.4);
+
+    --brand-color-rgb: 29, 37, 56;
+    --brand-light1-color-rgb: 71, 91, 116;
+    --brand-light2-color-rgb: 124, 141, 165;
+    --brand-light3-color-rgb: 224, 225, 220;
+
     /* typography*/
     --font-family1: Garamond, serif;
     --font-size1: 2rem;

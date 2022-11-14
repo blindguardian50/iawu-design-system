@@ -1,4 +1,5 @@
 import "../src/style-guide/cssVars.css"
+import "../src/style-guide/global.css"
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
