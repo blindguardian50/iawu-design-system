@@ -14,7 +14,8 @@ const Template: ComponentStory<typeof BaseHeading> = (args) => <BaseHeading {...
 export const BaseHeadingBrand = Template.bind({});
 BaseHeadingBrand.args = {
     fontCSSVar: "--font1",
-    children: "Base Heading"
+    children: "Base Heading",
+    margin: "0.5rem 1.5rem"
 }
 
 export const BaseHeadingBrandLight1 = Template.bind({});

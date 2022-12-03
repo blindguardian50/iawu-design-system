@@ -2,13 +2,17 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { BaseButton} from "../../components";
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+// parameters: {
+//     status: {
+//         type: "beta"
+//     }
+// }
+
 export default {
     title: "ReactComponentLibrary/Buttons/BaseButton",
     component: BaseButton,
 } as ComponentMeta<typeof BaseButton>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof BaseButton> = (args) => <BaseButton {...args} />;
 
 export const BaseButtonBrand = Template.bind({});

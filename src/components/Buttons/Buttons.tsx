@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import {ReactNode} from "react";
+import React from "react";
 
 const TemplateButton = styled.button`
   cursor: pointer;
@@ -8,45 +10,55 @@ const TemplateButton = styled.button`
   border: none;
 `
 
-type BaseButtonProps = {
+type BaseButtonStyledProps = {
+    /**
+     * Expects CSS Variable for font color
+     * @default inherit
+     */
     colorCSSVar?: string,
+    /**
+     * Expects CSS Variable for font color
+     * @default
+     */
     backgroundCSSVar?: string,
-    fontCSSVar?: string
+    /**
+     * Expects CSS Variable for font
+     * @default
+     */
+    fontCSSVar?: string,
+    /**
+     * Expects CSS Variable for outline of button on focus element
+     * @default 1px solid blue
+     */
+    focusedCSSVar?: string
 }
-const BaseButton = styled(TemplateButton)<BaseButtonProps>`
-  color: var(${props => props.colorCSSVar ?? "--light-color"});
-  background: var(${props => props.backgroundCSSVar ?? "--brand-color"});
-  transition: filter 0.5s, transform 0.1s;
-  font: var(${props => props.fontCSSVar ?? "--font1"});
+const BaseButtonStyled = styled(TemplateButton)<BaseButtonStyledProps>`
+  color: ${({colorCSSVar}) => colorCSSVar ? `var(${colorCSSVar})` : "inherit"};
+  background: ${({backgroundCSSVar}) => backgroundCSSVar ? `var(${backgroundCSSVar})` : ""};
+  font: var(${props => props.fontCSSVar ?? ""});
+  transition: filter 0.1s, transform 0.1s;
   :hover {
-    filter: brightness(120%);
+    filter: ${({backgroundCSSVar}) => backgroundCSSVar ? `brightness(120%);` : "brightness(80%);"};
   }
   :active {
+    filter: ${({backgroundCSSVar}) => backgroundCSSVar ? `brightness(120%);` : "brightness(80%);"};
     transform: scale(0.8);
   }
   :focus {
-    outline: 1px solid blue;
+    outline: ${({focusedCSSVar}) => focusedCSSVar ? `var(${focusedCSSVar})` : "1px solid blue"};
   }
 `
 
-type IconButtonProps = {
-    radius?: string,
-    icon?: string,
+type BaseButtonProps = BaseButtonStyledProps & {
+    children: ReactNode
 }
-const IconButton = styled(TemplateButton)<BaseButtonProps>`
-  color: var(${props => props.colorCSSVar ?? "--light-color"});
-  background: var(${props => props.backgroundCSSVar ?? "--brand-color"});
-  transition: filter 0.5s, transform 0.1s;
-  border-radius: 50%;
-  :hover {
-    filter: brightness(120%);
-  }
-  :active {
-    transform: scale(0.8);
-  }
-  :focus {
-    outline: 1px solid blue;
-  }
-`
 
-export {BaseButton, TemplateButton}
+const BaseButton = (props: BaseButtonProps) => {
+    return (
+        <BaseButtonStyled className={"base-button"} {...props}>
+            {props.children}
+        </BaseButtonStyled>
+    )
+}
+
+export {BaseButton}

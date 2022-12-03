@@ -5,13 +5,14 @@ type HeadingStyleProps = {
   colorCSSVar?: string,
   backgroundCSSVar?: string,
   fontCSSVar?: string,
+  margin?: string
 }
 
 const TemplateHeading = css<HeadingStyleProps>`
   color: var(${props => props.colorCSSVar ?? "--dark-color"});
   background: var(${props => props.backgroundCSSVar ?? "transparent"});
   font: var(${props => props.fontCSSVar ?? "--font1"});
-  margin: 0;
+  margin: ${({margin}) => margin ?? 0};
 `
 
 const HeadingH1 = styled.h1`${TemplateHeading}`
