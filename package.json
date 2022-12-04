@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/blindguardian50"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design System for Educational Purposes.",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs",
